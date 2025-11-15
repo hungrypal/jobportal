@@ -1,0 +1,134 @@
+/* ================================
+   Job Portal Modern Theme - Fresh Colors
+   ================================ */
+
+/* Theme Colors */
+:root {
+  --primary: #ff6b6b;       /* Coral Red */
+  --secondary: #4ecdc4;     /* Turquoise */
+  --success: #1dd1a1;       /* Mint Green */
+  --warning: #feca57;       /* Amber */
+  --danger: #ee5253;        /* Soft Red */
+  --light: #fefefe;         /* Off White */
+  --dark: #222f3e;          /* Dark Slate */
+  --card-bg: #ffffff;       /* Card Background */
+  --page-bg: #f0f5f9;       /* Page Background */
+}
+
+/* General */
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #ffe6e6, #e0f7fa); /* Soft gradient */
+    color: var(--dark);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #ff6b6b, #ff9f43); /* Coral to Orange gradient */
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+.hero-section h1 { font-size: 3rem; font-weight: 700; }
+.hero-section p { font-size: 1.2rem; margin-top: 1rem; }
+
+/* Filter Card */
+.filter-card {
+    background-color: #fefefe;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* Job Cards */
+.job-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 1.5rem;
+    border: none;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+    transition: all 0.3s ease;
+}
+.job-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+.job-card h5 { color: #ff6b6b; font-weight: 600; }
+.company-name { color: #4ecdc4; font-size: 0.9rem; }
+.job-details { display: flex; flex-wrap: wrap; gap: 10px; margin: 1rem 0; }
+.job-detail { font-size: 0.85rem; padding: 0.4rem 1rem; background: #f5f7fa; border-radius: 25px; color: #555; }
+
+/* Dashboard Cards */
+.dashboard-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+.dashboard-card:hover { transform: translateY(-5px); }
+.dashboard-card i { font-size: 2.2rem; margin-bottom: 1rem; color: #ff6b6b; }
+
+/* Sticky Job Detail Card */
+.card.sticky-top {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+}
+
+/* Modals */
+.modal-content {
+    border-radius: 16px;
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(90deg, #ff6b6b, #ff9f43);
+    border: none;
+    border-radius: 25px;
+    padding: 0.7rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255,107,107,0.3);
+}
+
+.btn-outline-primary {
+    border-radius: 25px;
+    border-color: #ff6b6b;
+    color: #ff6b6b;
+}
+.btn-outline-primary:hover {
+    background: #ff6b6b;
+    color: #fff;
+}
+
+/* Badges */
+.bg-primary { background-color: #ff6b6b !important; color: #fff; }
+.bg-info    { background-color: #4ecdc4 !important; color: #fff; }
+.bg-success { background-color: #1dd1a1 !important; color: #fff; }
+.bg-secondary { background-color: #576574 !important; color: #fff; }
+
+/* Alerts */
+.alert { border-radius: 16px; }
+
+/* Footer */
+footer {
+    background: #fefefe;
+    border-top: 1px solid #e0e0e0;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section h1 { font-size: 2.2rem; }
+    .job-details { flex-direction: column; gap: 0.5rem; }
+}
